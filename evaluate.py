@@ -8,6 +8,7 @@ from its own results) and checks what fraction of its top-K retrieved
 images share the same category label. This is a standard way to sanity
 check a similarity search system when you have *some* ground-truth notion
 of "should be similar" — here, shape category.
+
 """
 
 import argparse
