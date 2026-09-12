@@ -10,6 +10,7 @@ the project out. Run it again for a fresh random set.
 
 Usage:
     python data/generate_data.py [--n-per-class 20] [--seed 42]
+    
 """
 
 import argparse
