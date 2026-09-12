@@ -11,6 +11,7 @@ Each sub-vector is L2-normalized on its own before being weighted and
 concatenated, so neither feature type dominates just because it happens to
 have more dimensions. No training or pretrained weights are required —
 these are hand-engineered features computed directly from pixels.
+
 """
 
 import cv2
