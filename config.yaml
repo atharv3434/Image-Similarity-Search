@@ -1,0 +1,35 @@
+# Configuration for the image similarity search project.
+
+images_dir: data/images
+metadata_path: data/metadata.json
+index_path: models/feature_index.joblib
+output_dir: output
+
+# Resize every image to this size before extracting features, so all
+# feature vectors are comparable regardless of original image size.
+resize_to: [128, 128]
+
+# Which feature types to use, and how much weight each contributes to the
+# final combined (L2-normalized) feature vector.
+use_color_histogram: true
+use_hog: true
+color_weight: 0.5
+hog_weight: 0.5
+
+# Color histogram settings (per HSV channel)
+hist_bins_h: 16
+hist_bins_s: 8
+hist_bins_v: 8
+
+# HOG (shape/texture) settings
+hog_orientations: 9
+hog_pixels_per_cell: [16, 16]
+hog_cells_per_block: [2, 2]
+
+# Similarity search
+top_k: 5
+distance_metric: cosine   # passed to sklearn's NearestNeighbors
+
+# Evaluation
+eval_top_k: [1, 3, 5]
+n_example_queries: 4
