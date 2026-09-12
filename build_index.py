@@ -6,6 +6,7 @@ Usage:
 Extracts a feature vector for every image in `images_dir` and saves them,
 along with filenames and metadata, to `index_path` for fast repeated
 similarity search without recomputing features each time.
+
 """
 
 import argparse
