@@ -6,6 +6,7 @@ Usage:
 Loads the pre-built feature index, extracts features for the query image
 the same way the index was built, and returns the nearest neighbors by
 cosine similarity.
+
 """
 
 import argparse
